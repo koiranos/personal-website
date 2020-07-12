@@ -1,0 +1,156 @@
+body {
+    background-color: #264653;
+    font-weight: 300;
+    color: white;
+}
+
+p {
+    font-size: 0.4em;
+    text-align: center;
+}
+
+.typing {
+    height: 200px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.socials > p {
+    margin: 0 5px;
+    font-size: 2em;
+} 
+
+.btn-socials {
+    color: white;
+    background-color: #264653;
+}
+
+.btn-socials:hover {
+    color: #E9C46A;
+}
+
+.navbar-nav {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    text-align: center;
+    margin-left: 20px;
+    font-size: 2em;
+}
+
+button {
+    border-style: none;
+    background-color: #2A9D8F;
+    color: inherit;
+    outline: none !important;
+}
+
+
+.selected {
+    color: #E9C46A;
+    font-size: 1.3em !important;
+}
+
+.language > button {
+    background-color: #264653;
+    font-size: 0.9em;
+}
+
+.language > button:hover {
+    font-weight: 600;
+}
+
+.navbar-dark {
+    background-color: #2A9D8F !important;
+}
+
+.language {
+    text-align: right;
+    font-size: 1.2em;
+}
+
+.greetings {
+    font-size: 5em;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.orange {
+    color: #E9C46A;
+}
+
+@media screen and (max-width: 699px) {
+    .typing {
+        height: 100px;
+    }
+}
+
+@media only screen and (min-width: 990px) and (max-width: 1429px){
+    .nav-link > button {
+        padding: 0 60px;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1429px){
+    p {
+        font-size: 1em;
+    }
+
+    .socials > p {
+        font-size: 3em;
+    } 
+}
+
+@media screen and (min-width: 1430px) {
+    nav {
+        z-index: 5;
+        position: fixed;
+        top: 200px;
+        left: 80px;
+        width: 150px;
+        height: 500px;
+        font-size: 2.2em;
+    }
+
+    .socials > p {
+        font-size: 2em;
+    } 
+
+    .typing {
+        height: 250px;
+    }
+
+    .navbar-nav {
+        flex-direction: column !important;
+        justify-content: flex-end !important;
+        text-align: center;
+        margin-left: 20px;
+        font-size: 1.1em;
+    }
+
+    .navbar {
+        align-items: flex-start !important;
+    }
+    
+    .home-page {
+        margin-top: -450px !important;
+    }
+
+    p {
+        font-size: 1.5em;
+        text-align: right;
+    }
+
+    .language {
+        margin-right: 60px;
+        font-size: 1.2em;
+    }
+
+    .greetings {
+        margin-top: 40px;
+        padding-right: 150px !important;
+    }
+}

@@ -1,0 +1,456 @@
+body {
+    background-color: #222222;
+    color: #f4f4f4;
+    margin:0;
+    padding:0;
+}
+
+.home img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    overflow: hidden;
+}
+
+.base-color {
+    color: #e2472b;
+}
+
+.section-title {
+    font-size: 3rem;
+}
+
+.section-subtitle {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    z-index: 15;
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    border-bottom: 1px solid #f4f4f47e;
+    font-size: 1.5rem;
+}
+
+.logo-area, .header-info-area {
+    display: inline;
+}
+
+.header-col {
+    flex-basis: content;
+}
+
+.port {
+    font-size: 1.2rem;
+}
+
+#pp-nav span, .pp-SlidesNav span{
+    border-radius: 10px;
+    width: 20px;
+    height: 4px;
+    border: none;
+    background: #f4f4f4;
+}
+
+#pp-nav li .active span {
+    background-color: #e2472b;
+    width: 30px;
+    margin-left: -8px;
+}
+
+.pp-scrollable {
+    padding-top: 100px;
+    scrollbar-width: thin;
+    scrollbar-color: gray;
+}
+
+.pp-scrollable::-webkit-scrollbar {
+    width: 4px;
+    background: gray;
+}
+
+.pp-tooltip.right {
+    right: 24px;
+}
+.pp-tooltip {
+    font-size: 11px;
+}
+
+.page-indicator{
+    position: fixed;
+    left: 0;
+    transform: rotate(-90deg);
+    top: 50%;
+}
+
+.page-indicator::before, .page-indicator::after {
+    content: '';
+    width: 40px;
+    height: 1px;
+    background-color: #e2472b;
+    position: absolute;
+    top: 12px;
+}
+
+.page-indicator::before {
+    right: 150%;
+}
+
+.page-indicator::after {
+    left: 150%;
+}
+
+.name, .skills, .information {
+    margin-bottom: 0;
+}
+
+.name {
+    font-size: 2.5rem;
+}
+
+.skills {
+    font-size: 1.8rem;
+}
+
+.information {
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+
+.my-photo {
+    width: 80%;
+}
+
+.personal {
+    font-size: 1.1rem;
+    font-weight: lighter;
+}
+
+.hidden-mail:hover {
+    cursor: pointer;
+}
+
+.lab {
+    font-size: 3.5rem;
+    font-weight: lighter;
+}
+
+.resume p {
+    margin-bottom: unset;
+}
+
+.resume-topic {
+    font-size: 2rem;
+}
+
+.resume-title {
+    font-size: 1.3rem;
+}
+
+.resume-year {
+    font-size: 1.1rem;
+}
+
+.resume-cat {
+    color: #e2472b;
+    font-weight: bold;
+}
+
+.resume-description, .contact-text {
+    text-indent: 20px;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.contact-text {
+    padding-right: 50px;
+}
+
+.ball {
+    z-index: 1;
+    background-color: #f4f4f4;
+    width: 23px;
+    height: 23px;
+    border: 3px solid #e2472b;
+    border-radius: 50%;
+    position: absolute;
+    top: 22px;
+    left: -15px;
+}
+
+.line {
+    background-color: gray;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top: 22px;
+    left: -5px;
+}
+
+.rate, .bar {
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.rating {
+    width: 100%;
+    position: relative;
+}
+
+.rate {
+    width: 100%;
+    background-color: gray;
+}
+
+.bar {
+    background-color: #e2472b;
+}
+
+.bar-7 {
+    width: 70%;
+}
+
+.bar-8 {
+    width: 80%;
+}
+
+.bar-9 {
+    width: 90%;
+}
+
+.skill-information {
+    position: relative;
+    width: 100%;
+}
+
+.skill-value {
+    position: absolute;
+    right: 0;
+    font-weight: normal;
+}
+
+
+.skill-name{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.contact-information p {
+    margin-bottom: 2px;
+    font-size: 1.05rem;
+}
+
+.contact-title {
+    font-size: 1.5rem;
+}
+
+
+.contact label {
+    color: #e2472b;
+}
+
+.contact input, .contact textarea {
+    background-color: #222222;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid white;
+    color: #ffffff;
+}
+
+.card {
+    background-color: #1816168f;
+}
+
+.single-content {
+    position: relative;
+    transition: .3s;
+}
+
+.single-content .text-content,
+.single-content::after {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+}
+
+.single-content::after {
+    content: '';
+    border-radius: 3px;
+    display: block;
+    border-top: #f4f4f4;
+    border-bottom: #f4f4f4;
+    background: #4e11067a;
+    top: 20px;
+    bottom: 63px;
+    opacity: 0;
+    transform: scale3d(0,0,0);
+    transition: .4s;
+}
+
+.single-content:hover::after {
+    opacity: 0.9;
+    transform: scale3d(1,1,1);
+}
+
+.text-content {
+    top: 50%;
+    opacity: 0;
+    z-index: 1;
+    transform: translate(0,-30%);
+    transition: .3s;
+    text-align: center;
+}
+
+.single-content img {
+    width: 100%;
+    height: auto;
+}
+
+.single-content:hover .text-content {
+    opacity: 1;
+    transform: translate(0, -50%);
+    transition-delay: .15s;
+}
+
+.modal-dialog {
+    max-width: 75%;
+}
+
+.close {
+    color: #f4f4f4;
+}
+
+.close:hover {
+    color: #ffffff;
+}
+
+.modal-content {
+    background-color: #222222;
+}
+
+#pp-nav {
+    z-index: 7 !important;
+}
+
+.modal-container {
+    background-color: rgb(34, 29, 29);
+    border-radius: 20px;
+}
+.my-modal {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #222222;
+    z-index: 2;
+}
+
+#project-title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.modal-title {
+    font-size: 1rem;
+}
+
+.modal-footer {
+    justify-content: left;
+}
+
+.modal-header, .modal-footer {
+    background-color: #1a1a1a;
+}
+.modal-header {
+    border-bottom:1px solid #e2462b55;
+}
+ .modal-footer {
+    border-top:1px solid #e2462b55;
+}
+
+.showing {
+    display: block;
+}
+
+.carousel-item img {
+    margin: auto;
+    width: 50%;
+}
+
+.social i {
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width: 990px) {
+    #pp-nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .modal-dialog {
+        max-width: 800px;
+        margin-left: -10px;
+    }
+}
+
+.cert-descr, .cert-icon {
+    display: inline-block;
+    color: white;
+}
+
+svg {
+    width: 80px;
+    margin-top: -20px;
+    padding: 0;
+    border: 1px solid #50160c;
+    background-color: #1a1a1a;
+    padding: 6px;
+    border-radius: 10px;
+}
+.cert-descr {
+    margin-left: 20px;
+}
+
+.course-title {
+    font-size: 1.2em;
+}
+
+.course-title, .course-descr {
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio-items {
+    list-style-type: none;
+}
+
+.portfolio-items li {
+    /* display: inline; */
+}
+
+.carousel-item img {
+    border-radius: 8px;
+    border: 1px solid #50160c;
+    /* box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.137); */
+}

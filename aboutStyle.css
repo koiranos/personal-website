@@ -1,0 +1,13 @@
+body {
+    background-color: #264653;
+    font-weight: 300;
+    color: white;
+}
+
+
+@media screen and (min-width: 1430px) {
+    .my-img {
+        box-shadow: 15px 15px 0 #F4A261,
+                -15px -15px 0 #E76F51;
+    }
+}
