@@ -552,6 +552,16 @@
                 </div>
               </div>
 
+              <div class="col-12 col-lg-4 mt-5 mt-lg-0 mix all web-dev">
+                <div class="single-content ">
+                  <img src="./images/item4.png" class="rounded" alt="smaple image">
+                  <div class="text-content">
+                    <button type="button" class="btn btn-light mb-4" onClick="workItemContent('work4')" data-toggle="modal" data-target="#workItemModal"><i class="las la-link"></i></button>
+                      <h5>Greek TV Channels</h5>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
 
@@ -574,9 +584,8 @@
                 <p class="contact-text">I would love to hear from you!</p>
                 <p class="contact-text"> If you have any questions or comments, or if you want to get in touch, send me a message or try one of the ways below: </p>
                 <div class="contact-information">
-                  <p class="my-phone"><span class="resume-cat">Phone :</span> +1 212-695-1962</p>
+                  <p class="my-phone"><span class="resume-cat">Phone :</span> +30 697 0127705</p>
                   <p><span class="resume-cat">Mail :</span> <a class="hidden-mail font-italic" data-email="panagiotakiskostasATyahooDOTcom">Show Email</a></p>
-                  <p><span class="resume-cat">Web :</span> www.retrina.com</p>
                 </div>
               </div>
               <div class="col-12 col-lg-6">
@@ -684,6 +693,17 @@
           },
           analysis: `This is an interior design sudjestion for the living room area of a house in Kozani, Greece.<br> 3D Studio Max was used for the models.<br>The scene was rendered with V-ray renderer.<br>The post production was done in Photoshop.`
         },
+        work4: {
+          type: 'Web Development Project',
+          title: `Greek TV Channels <span class="base-color">Web Application</span>`,
+          description: 'Website for watching Greek TV channels online.',
+          images: {
+            image1: './images/p4img1.jpg',
+            image2: './images/p4img2.jpg',
+            image3: './images/p4img3.jpg',
+          },
+          analysis: `I created this web application because I do not own a TV and I wanted to be able to watch the national and private networks in my country.<br>The site was make with React and Next.js. A bootswatch theme was used for styling and two react players for previewing the channels.`
+        }
       }
 
       function workItemContent(itemName) {
