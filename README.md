@@ -16,5 +16,5 @@ Thank you for stopping by!
 
 If you want to check my webpage follow the link below:
 ```sh
-https://koiranos.github.io/personal-website/index.html
+http://www.panagiotakiskostas.com/
 ```
